@@ -1,0 +1,1 @@
+from controlevendas.permissions.rest.VendedorPermission import VendedorPermission

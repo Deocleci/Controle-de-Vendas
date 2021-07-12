@@ -1,0 +1,3 @@
+from controlevendas.views.ProdutoViewSet import ProdutoViewSet
+from controlevendas.views.PedidoViewSet import PedidoViewSet
+from controlevendas.views.RelatorioPedidoViewSet import RelatorioPedidoViewSet

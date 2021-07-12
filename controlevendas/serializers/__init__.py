@@ -1,0 +1,2 @@
+from controlevendas.serializers.ProdutoSerializers import ProdutoSerializers
+from controlevendas.serializers.PedidoSerializers import PedidoSerializers
