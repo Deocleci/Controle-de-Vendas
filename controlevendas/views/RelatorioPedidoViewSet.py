@@ -1,5 +1,5 @@
 from rest_framework.viewsets import  ModelViewSet
-from controlevendas.serializers import PedidoSerializers
+from controlevendas.serializers import PedidoSerializers, RelatorioSerializers
 from controlevendas.models import Pedido
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import TokenAuthentication
@@ -9,7 +9,7 @@ from controlevendas.permissions import VendedorPermission
 
 class RelatorioPedidoViewSet(ModelViewSet):
     queryset = Pedido.objects.all()
-    serializer_class = PedidoSerializers
+    serializer_class = RelatorioSerializers
     permission_classes = [IsAuthenticated, VendedorPermission]
     authentication_classes = [TokenAuthentication]
     pagination_class = LimitOffsetPagination
